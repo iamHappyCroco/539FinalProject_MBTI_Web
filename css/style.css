@@ -383,6 +383,7 @@ main {
 /* Match Card Styling */
 .match-card {
     display: flex;
+    flex-direction: column;
     background-color: rgba(208, 176, 155, 0.7);
     border-radius: 10px;
     padding: 2rem;
@@ -391,18 +392,10 @@ main {
     max-width: 80%;
     margin-bottom: 10px;
     gap: 30px;
+    justify-items: center;
     align-items: center;
 }
 
-.match-card:nth-child(odd) {
-    margin-left: 0;
-}
-
-
-.match-card:nth-child(even) {
-    margin-left: auto;
-    flex-direction: row-reverse;
-}
 
 .match-card:hover {
     transform: scale(1.05);
@@ -431,6 +424,32 @@ main {
     transition: background-color 0.3s ease, border 0.3s ease;
 }
 
+@media (min-width: 1000px) {
+    .match-card {
+        display: flex;
+        background-color: rgba(208, 176, 155, 0.7);
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 80%;
+        margin-bottom: 10px;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .match-card:nth-child(odd) {
+        margin-left: 0;
+        flex-direction: row;
+    }
+    
+    
+    .match-card:nth-child(even) {
+        margin-left: auto;
+        flex-direction: row-reverse;
+    }
+    
+}
 
 /* Image Styling */
 .fun-fact-image {
