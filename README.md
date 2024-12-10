@@ -33,6 +33,6 @@
 
 ## Credits
 - Developed by [Zhile Wu] (https://github.com/iamHappyCroco).
-- MBTI concepts and personality type descriptions are referenced from the 16 personnalities offical website.
+- MBTI concepts and personality type descriptions are referenced from the 16 personalities official website.
 - Icons and visuals are sourced from free resources or created specifically by for the project.
 - This project is part of a learning experience to enhance web development skills.
